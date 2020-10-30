@@ -23,15 +23,5 @@ class Chain {
 		newBlock.hash = newBlock.computeHash();
 		chain.add(newBlock);
 	}
-
-	public static void main(String[] args) {
-		// System.out.println("It works!");
-		Chain yuChain = new Chain();
-		Block block1 = new Block("Transfer 10 dollar", "123");
-		yuChain.addBlockToChain(block1);
-
-		System.out.println("Block: " + block1.data);
-		System.out.println("previousHash: " + block1.previousHash);
-		System.out.println("hash: " + block1.hash);
-	}
+	
 	}

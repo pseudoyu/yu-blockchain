@@ -16,7 +16,7 @@ class Block {
 	}
 
 	public String computeHash() {
-		return utils.MDutil.SHA256(Arrays.toString(this.data) + this.previousHash + this.nonce);
+		return utils.MDutil.SHA256(this.data + this.previousHash + this.nonce);
 	}
 
 	public String getAnswer(int difficulty) {

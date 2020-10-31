@@ -11,7 +11,7 @@ public class Main {
 		// Tamper yuBlockChain with hash
 
 		// yuBlockChain.chain.get(1).data="Transfer 10 * 10 dollar";
-		// yuBlockChain.chain.get(1).hash=yuBlockChain.chain.get(1).computeHash();
+		// yuBlockChain.chain.get(1).mine(4);
         // System.out.println(yuBlockChain);
 		// System.out.println(yuBlockChain.validateChain());
 	}

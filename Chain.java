@@ -5,6 +5,7 @@ import utils.MDutil;
 class Chain {
 
 	List<Block> chain = new ArrayList<>();
+	int difficulty = 4;
 
 	public Chain() {
 		chain.add(bigBang());
@@ -20,7 +21,8 @@ class Chain {
 	}
 	public void addBlockToChain(Block newBlock) {
 		newBlock.previousHash = getLatestBlock().hash;
-		newBlock.hash = newBlock.computeHash();
+		newBlock.mine(this.difficulty);
+		// newBlock.hash = newBlock.computeHash();
 		chain.add(newBlock);
 	}
 

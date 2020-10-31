@@ -15,6 +15,27 @@ class Block {
 	}
 
 	public String computeHash() {
-		return utils.MDutil.SHA256(this.data + this.previousHash);
+		return utils.MDutil.SHA256(this.data + this.previousHash + this.nonce);
+	}
+
+	public String getAnswer(int difficulty) {
+		String answer = "";
+		for (int i = 0; i < difficulty; i++) {
+			answer = answer + "0";
+		}
+		return answer;
+	}
+
+	public void mine(int difficulty) {
+		while (true) {
+			hash = computeHash();
+			if (!hash.substring(0, difficulty).equals(getAnswer(difficulty))) {
+				nonce ++;
+				this.hash = this.computeHash();
+			} else {
+				break;
+			}
+		}
+		System.out.println("Mining Done! " + this.hash);
 	}
 }

@@ -5,7 +5,7 @@ import utils.MDutil;
 class Chain {
 
 	List<Block> chain = new ArrayList<>();
-	int difficulty = 4;
+	int difficulty = 5;
 
 	public Chain() {
 		chain.add(bigBang());

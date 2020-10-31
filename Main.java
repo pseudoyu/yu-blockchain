@@ -6,13 +6,13 @@ public class Main {
         yuBlockChain.addBlockToChain(block1);
         Block block2 = new Block("Transfer 10 * 10 dollar", "");
         yuBlockChain.addBlockToChain(block2);
-        System.out.println(yuBlockChain.validateChain());
+        // System.out.println(yuBlockChain.validateChain());
 		
 		// Tamper yuBlockChain with hash
 
-		// yuBlockChain.chain.get(1).data="Transfer 10 * 10 dollar";
-		// yuBlockChain.chain.get(1).mine(4);
+		yuBlockChain.chain.get(1).data="Transfer 10 * 10 dollar";
+		yuBlockChain.chain.get(1).mine(5);
         // System.out.println(yuBlockChain);
-		// System.out.println(yuBlockChain.validateChain());
+		System.out.println(yuBlockChain.validateChain());
 	}
 }

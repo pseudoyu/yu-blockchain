@@ -1,6 +1,15 @@
+package com.pseudoyu;
+
+import com.pseudoyu.utils.MDutil;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+/**
+ * @author Yu Zhang
+ * @date 2021/5/10 9:34 下午
+ */
 
 class Block {
 
@@ -16,7 +25,7 @@ class Block {
 	}
 
 	public String computeHash() {
-		return utils.MDutil.SHA256(this.data + this.previousHash + this.nonce);
+		return MDutil.SHA256(this.data + this.previousHash + this.nonce);
 	}
 
 	public String getAnswer(int difficulty) {

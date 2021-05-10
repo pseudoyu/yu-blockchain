@@ -1,6 +1,12 @@
+package com.pseudoyu;
+
 import java.util.ArrayList;
 import java.util.List;
-import utils.MDutil;
+
+/**
+ * @author Yu Zhang
+ * @date 2021/5/10 9:34 下午
+ */
 
 class Chain {
 
@@ -50,5 +56,5 @@ class Chain {
 		}
 		return true;
 	}
-	
+
 	}

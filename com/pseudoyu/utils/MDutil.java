@@ -1,7 +1,12 @@
-package utils;
+package com.pseudoyu.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
+/**
+ * @author Yu Zhang
+ * @date 2021/5/10 9:36 下午
+ */
 
 public class MDutil {
     /**

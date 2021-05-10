@@ -1,7 +1,14 @@
-import utils.MDutil;
+package com.pseudoyu;
+
+import com.pseudoyu.utils.MDutil;
+
+/**
+ * @author Yu Zhang
+ * @date 2021/5/10 9:34 下午
+ */
 
 public class ProofOfWork {
-	
+
 	public static void main(String[] args) {
 		proofOfWork();
 	}
